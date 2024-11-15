@@ -4,16 +4,103 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>메인 페이지</title>
-    
-    <!-- 외부 스타일 시트 링크 -->
-    <link rel="stylesheet" href="styles.css">
-    
-    <!-- jQuery 추가 (선택 사항) -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    
-    <!-- 외부 자바스크립트 파일 링크 -->
-    <script src="scripts.js" defer></script>
+    <title>환영합니다! - 꾸며진 페이지</title>
+
+    <!-- 스타일 추가 -->
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.1rem;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #FFD700;
+        }
+
+        main {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 80vh;
+        }
+
+        section {
+            text-align: center;
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            width: 80%;
+            max-width: 500px;
+        }
+
+        section h2 {
+            font-size: 2rem;
+            color: #333;
+        }
+
+        section p {
+            font-size: 1.1rem;
+            color: #666;
+            margin: 20px 0;
+        }
+
+        #clickMeBtn {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            font-size: 1.1rem;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.2s;
+        }
+
+        #clickMeBtn:hover {
+            background-color: #45a049;
+            transform: scale(1.05);
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -30,7 +117,7 @@
     <main>
         <section>
             <h2>여기에서 시작하세요</h2>
-            <p>이 페이지는 예시로 작성된 index.html입니다. 버튼을 클릭해 보세요.</p>
+            <p>이 페이지는 예시로 작성된 index.html입니다. 버튼을 클릭하면 알림이 표시됩니다.</p>
             <button id="clickMeBtn">클릭하세요</button>
         </section>
     </main>
